@@ -1,5 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Link from "../components/Link.astro";
 ---
 
 <MainLayout
@@ -8,10 +9,15 @@ import MainLayout from "../layouts/MainLayout.astro";
   ogtitle="TikTok's tilbagefald i årene 2022 til 2023"
   ogdescription="Kort artikel omkring TikTok's tilbagefald"
 >
-  <div id="top" class="overflow-visible max-w-3xl mx-auto">
-    <h1 class="md:text-left text-center md:text-5xl text-4xl font-bold pb-12 relative">TikTok's tilbagefald i 2022-2023</h1>
+  <div id="top" class="overflow-visible max-w-3xl mx-auto pb-12">
+    <h1 class="md:text-left text-center md:text-5xl text-4xl font-bold relative">TikTok's tilbagefald i 2022-2023</h1>
+    <p class="text-md md:text-lg md:mx-auto mx-8 mt-4 opacity-60">
+      Med data fra: <Link
+        href="https://www.dr.dk/om-dr/fakta-om-dr/medieforskning/medieudviklingen/2023/tiktok-paa-tilbagetog"
+        text="DR's artikel om TikTok's tilbagetog"
+      />
+    </p>
   </div>
-
   <div class="flex md:flex md:justify-start justify-center max-w-3xl mx-auto">
     <img src="/images/phone2.webp" alt="phone2" class="rounded-md md:w-1/2 w-2/3" />
   </div>
@@ -19,9 +25,9 @@ import MainLayout from "../layouts/MainLayout.astro";
   <div class="max-w-3xl mx-auto pt-10">
     <p class="text-md mb-8 md:text-lg md:mx-auto mx-8">
       I 2023 falder TikTok-brugen blandt danskere, især blandt de unge, hvor den daglige brug for 15-19-årige er faldet fra 63 % i 2022 til 55 %. På
-      trods af dette forbliver TikTok populært blandt denne aldersgruppe, mens de 25-31-årige oplever en stigning i dagligt brug. <br />Denne artikel
-      vil udforske de faktorer, der har påvirket TikToks popularitet og brug, samt hvordan appen navigerer i et klima præget af stigende bekymringer
-      omkring datasikkerhed og privatliv.
+      trods af dette forbliver TikTok populært blandt denne aldersgruppe, mens de 25-31-årige oplever en stigning i dagligt brug. <br /><br />Ved at
+      kigge på tidslinjen nedenfor kan du kigge igennem de faktorer, der har påvirket TikToks popularitet og brug, samt hvordan appen navigerer i et
+      klima præget af stigende bekymringer omkring datasikkerhed og privatliv.
     </p>
     <hr class="my-16 opacity-50" />
   </div>
