@@ -1,0 +1,25 @@
+body {
+  background-image: url(/images/phone.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed; /* Use fixed to cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* This copies the background image */
+  filter: brightness(0.6) grayscale(0.5); /* Adjust the blur value as needed */
+  z-index: -1; /* Ensure it stays behind the content */
+}
+
+h1 {
+  z-index: 10;
+  position: relative;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), /* Inner glow */ 0 0 10px rgba(255, 255, 255, 0.5), /* Medium glow */ 0 0 15px rgba(0, 183, 255, 0.4); /* Soft colored glow */
+}

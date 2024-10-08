@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/tailwind.css";
+import "../styles/global.css";
 import "animate.css";
 const { title } = Astro.props;
 ---
@@ -13,13 +14,18 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title}</title>
+    <meta name="description" content={Astro.props.description} />
+    <meta property="og:locale" content="da_DK" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={Astro.props.ogtitle} />
+    <meta property="og:description" content={Astro.props.ogdescription} />
   </head>
-  <body class="bg-gray-100 max-w-7xl mx-auto">
+  <body class="max-w-7xl mx-auto">
     <header>
       <Header />
     </header>
 
-    <main class="bg-white max-w-7xl mx-auto">
+    <main class="bg-gray-900/90 backdrop-blur-sm max-w-7xl mx-auto text-gray-100 relative">
       <slot />
     </main>
 
