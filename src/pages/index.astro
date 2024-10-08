@@ -3,7 +3,130 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="TikTok's tilbagefald i 2022-2023">
-  <div>
+  <div class="top-part text-center font-bold text-5xl tracking-wider pb-12">
     <h1>TikTok's tilbagefald i 2022-2023</h1>
+  </div>
+  <div class="timeline">
+    <div class="max-w-4xl mx-auto px-4 py-10">
+      <!-- Timeline Container -->
+      <div class="relative border-l-4 border-gray-300">
+        <!-- 2022 -->
+        <div class="mb-20 ml-8">
+          <div class="absolute w-6 h-6 bg-pink-500 rounded-full mt-1.5 -left-3 border-4 border-white"></div>
+          <p class="text-lg font-semibold text-pink-600">2022</p>
+
+          <div class="mt-4 flex items-start">
+            <!-- Icon 1 -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-16 w-16 text-blue-500 mr-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+              ></path>
+            </svg>
+
+            <div>
+              <h2 class="text-2xl font-bold">63% af unge bruger TikTok</h2>
+              <p class="text-gray-600 mt-2 text-lg">
+                TikTok er stadig en af de mest populære apps blandt unge med en høj brugerandel på 63%. Platformen bruges til alt fra underholdning
+                til sociale interaktioner og trends.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10 flex items-start">
+            <!-- Updated Icon: Warning -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-16 w-16 text-yellow-500 mr-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+              ></path>
+            </svg>
+
+            <div>
+              <h2 class="text-2xl font-bold">Advarsel fra Center for Cybersikkerhed</h2>
+              <p class="text-gray-600 mt-2 text-lg">
+                Center for Cybersikkerhed advarer mod brugen af TikTok på grund af sikkerhedsrisici, hvilket skaber bekymring blandt både brugere og
+                forældre. Advarslen antyder, at appen kan udgøre en trussel mod datasikkerhed og privatliv.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Midt 2022 -->
+        <div class="mb-20 ml-8">
+          <div class="absolute w-6 h-6 bg-cyan-500 rounded-full mt-1.5 -left-3 border-4 border-white"></div>
+          <p class="text-lg font-semibold text-cyan-600">Midt 2022</p>
+
+          <div class="mt-4 flex items-start">
+            <!-- Icon 1 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-red-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 17h5l-1.405-1.405a2.032 2.032 0 00-.287-.217C17.94 14.3 16.97 14 16 14h-3v3h2z"></path>
+            </svg>
+            <div>
+              <h2 class="text-2xl font-bold">Anklager om spionage</h2>
+              <p class="text-gray-600 mt-2 text-lg">
+                I løbet af året anklages TikTok for at indsamle data på en måde, der kan anses som spionage. Disse anklager, især rettet mod appens
+                kinesiske ejerskab, skaber yderligere usikkerhed og bekymring om datahåndtering, hvilket fører til, at flere overvejer at stoppe med
+                at bruge appen.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2023 -->
+        <div class="mb-20 ml-8">
+          <div class="absolute w-6 h-6 bg-zinc-500 rounded-full mt-1.5 -left-3 border-4 border-white"></div>
+          <p class="text-lg font-semibold text-zinc-600">2023</p>
+
+          <div class="mt-4 flex items-start">
+            <!-- Icon 1 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-green-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1118 0 9 9 0 01-18 0zm9 5v-4h-1"></path>
+            </svg>
+            <div>
+              <h2 class="text-2xl font-bold">Betragtes som en af de mest invasive apps</h2>
+              <p class="text-gray-600 mt-2 text-lg">
+                TikTok er blevet betragtet som en af de mest invasive apps i forhold til databeskyttelse. Kritikere peger på de omfattende
+                dataindsamlingsmetoder, der involverer personlige oplysninger og adfærdsmønstre, hvilket fører til øget offentlig debat om privatliv.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10 flex items-start">
+            <!-- Icon 2 -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-purple-500 mr-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            <div>
+              <h2 class="text-2xl font-bold">Politisk debat og potentielle forbud</h2>
+              <p class="text-gray-600 mt-2 text-lg">
+                I takt med stigende bekymring over datasikkerhed opstår der politiske debatter om, hvorvidt TikTok bør forbydes i forskellige lande.
+                Diskussionerne omfatter både sikkerhedsmæssige og økonomiske aspekter, hvilket kan føre til ændringer i appens tilgængelighed og brug.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </MainLayout>
